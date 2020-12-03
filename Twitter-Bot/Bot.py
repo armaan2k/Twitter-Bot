@@ -24,11 +24,21 @@ for friend in tweepy.Cursor(api.friends, screen_name="NaamraTnahcrem").items():
         try:
             print(status.full_text)
             status.favorite()
+            #api.update_status('this is going to be my bot reply', status.id_str)  #use this to reply to a tweet
         except tweepy.TweepError as e:
             print(e.reason)
         except StopIteration:
             break
 
+# api.update_status('I love OTV, haha :)')
+for status in tweepy.Cursor(api.user_timeline, screen_name=('@Disguised Toast'), tweet_mode="extended").items(1):
+    api.update_status('I love this', status.id_str)
+    print(status.full_text)
+    print(status.user.screen_name)
+
+
+
+#api.update_status("my update", in_reply_to_status_id = tweetid)
 
 
 
