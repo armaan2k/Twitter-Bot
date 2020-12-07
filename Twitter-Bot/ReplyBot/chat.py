@@ -65,11 +65,9 @@ def twitter_reply(tweet_text):
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
 
-    if prob.item() > 0.75: #prob of right intent category, lower for less accuracy
+    if prob.item() > 0.5: #prob of right intent category, lower for less accuracy
         for intent in intents["intents"]:
             if tag == intent["tag"]:
-                print(f"{bot_name}: {random.choice(intent['responses'])}") # change from print to tweet
+                return f"{random.choice(intent['responses'])}" # change from print to tweet
     else:
-        print(f"{bot_name}: I do not understand") # change from print to tweet
-
-twitter_reply("your mother is a nice woman")
+        return f" yes :)" # change from print to tweet

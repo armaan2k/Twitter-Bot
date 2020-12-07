@@ -32,40 +32,40 @@
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
     {
-      "tag": "items",
+      "tag": "sad",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
+        "Today is a sad day",
+        "I am sad",
+        "I am depressed",
+        "life sucks"
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        "Never give up!",
+        "That really sucks"
       ]
     },
     {
-      "tag": "payments",
+      "tag": "Happy",
       "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
+        "Today is a happy day",
+        "I am happy",
+        "I am excited",
+        "life is great"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "That so good!",
+        "I am happy for you!"
       ]
     },
     {
-      "tag": "delivery",
+      "tag": "Corona",
       "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
+        "When will this pandemic end?",
+        "Quarantine is the worst",
+        "Corona Virus will be the end of us?"
       ],
       "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
+        "Keep going strong, the end is near"
       ]
     },
     {
